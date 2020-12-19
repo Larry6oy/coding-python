@@ -1,2 +1,2 @@
-# coding-python
-My first python project
+# Coding Python
+This is my first python project.
