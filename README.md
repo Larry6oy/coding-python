@@ -1,2 +1,2 @@
 # Coding Python
-This is my first python project.
+These are Larry6oy's python coding projects.
