@@ -4,6 +4,7 @@ def check_guess(guess, answer):
     if guess.lower() == answer.lower():
         print('Correct answer')
         score = score + 1
+
 print('gess the animal!')
 guess1 = input('Which bear lives at the North pole?')
 print(guess1)
