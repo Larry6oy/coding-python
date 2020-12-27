@@ -10,7 +10,17 @@ heart_symbol =u'\u2764 '
 
 guessed_word_correctly = False
 
-
+def find_question_mark(clue):
+    has_question_mark = False
+    index = 0
+    while index < len(clue):
+        if '?' == clue[index]:
+            has_question_mark = True
+            break
+        else:
+            index = index + 1
+    return has_question_mark
+ 
 def update_clue(guessed_letter, seceret_word, clue):
     index = 0
     
@@ -33,6 +43,9 @@ while lives > 0:
 
         if guess in secret_word:
             update_clue(guess, secret_word, clue)
+            if find_question_mark(clue) == False:
+                guessed_word_correctly =  True
+                break
         else:
             print('Incorrect. You lose a life')
             lives = lives - 1
