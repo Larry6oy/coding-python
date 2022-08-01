@@ -15,7 +15,7 @@ text_turtle2.write('singleplayer', align='right', font=('Arial', 30, 'normal'))
 text_turtle2.setpos(100, 0)
 text_turtle2.write('multiplayer', align='left', font=('Arial', 30, 'normal'))
 
-if(keyboard.is_pressed('1')):
+if keyboard.is_pressed("One"):
     text_turtle2.clear()
     text_turtle2.hideturtle
     #create caterpillar
