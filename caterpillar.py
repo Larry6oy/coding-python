@@ -1,4 +1,4 @@
-import keyboard
+from keyboard import Key, Controller
 import random
 import turtle as t
 
