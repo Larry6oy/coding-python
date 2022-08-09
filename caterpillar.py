@@ -1,23 +1,10 @@
-from keyboard import Key, Controller
 import random
 import turtle as t
 
-text_turtle2 = t.Turtle()
-text_turtle2.penup()
-x = (t.window_width() / 2 - 50)
-y = (t.window_height() / 2 - 50)
-text_turtle2.setpos(x, y)
-text_turtle2.hideturtle()
-text_turtle2.write('CATERPILLER', align='right', font = ('Arial', 40, 'bold'))
-text_turtle2.hideturtle()
-text_turtle2.setpos(1, 0)
-text_turtle2.write('singleplayer', align='right', font=('Arial', 30, 'normal'))
-text_turtle2.setpos(100, 0)
-text_turtle2.write('multiplayer', align='left', font=('Arial', 30, 'normal'))
 
-if keyboard.is_pressed("One"):
-    text_turtle2.clear()
-    text_turtle2.hideturtle
+
+ask = input('Single player or multiplayer? (s/m): ')
+if(ask == 's'):
     #create caterpillar
     t.bgcolor('yellow')
     caterpillar = t.Turtle()
