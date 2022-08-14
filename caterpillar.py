@@ -4,6 +4,7 @@ import turtle as t
 
 
 ask = input('Single player or multiplayer? (s/m): ')
+print(ask)
 if(ask == 's'):
     #create caterpillar
     t.bgcolor('yellow')
